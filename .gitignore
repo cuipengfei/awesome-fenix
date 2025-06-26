@@ -16,6 +16,4 @@ yarn-error.log*
 .temp
 temp
 软件架构探索：The Fenix Project.pdf
-.specstory/.gitignore
-.specstory/history/2025-06-25_14-14-tell-me-all-about-this-repo-#codebase.md
-.specstory/history/2025-06-25_14-52-make-yourself-a-task-list-of-the-below.md
+.specstory
