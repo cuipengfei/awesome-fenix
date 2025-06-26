@@ -1,0 +1,225 @@
+.
+├── ./CHANGELOG.md
+├── ./README.md
+├── ./SUMMARY.md
+├── ./appendix
+│   ├── ./appendix/build-script.md
+│   ├── ./appendix/continuous-integration.md
+│   ├── ./appendix/deployment-env-setup
+│   │   ├── ./appendix/deployment-env-setup/README.md
+│   │   ├── ./appendix/deployment-env-setup/setup-docker.md
+│   │   └── ./appendix/deployment-env-setup/setup-kubernetes
+│   │       ├── ./appendix/deployment-env-setup/setup-kubernetes/README.md
+│   │       ├── ./appendix/deployment-env-setup/setup-kubernetes/images
+│   │       ├── ./appendix/deployment-env-setup/setup-kubernetes/setup-kubeadm.md
+│   │       ├── ./appendix/deployment-env-setup/setup-kubernetes/setup-minikube.md
+│   │       └── ./appendix/deployment-env-setup/setup-kubernetes/setup-rancher.md
+│   ├── ./appendix/istio.md
+│   └── ./appendix/operation-env-setup
+│       ├── ./appendix/operation-env-setup/README.md
+│       ├── ./appendix/operation-env-setup/elk-setup.md
+│       └── ./appendix/operation-env-setup/prometheus-setup.md
+├── ./architect-perspective
+│   └── ./architect-perspective/general-architecture
+│       ├── ./architect-perspective/general-architecture/README.md
+│       ├── ./architect-perspective/general-architecture/api-style
+│       │   ├── ./architect-perspective/general-architecture/api-style/README.md
+│       │   ├── ./architect-perspective/general-architecture/api-style/images
+│       │   ├── ./architect-perspective/general-architecture/api-style/mq.md
+│       │   ├── ./architect-perspective/general-architecture/api-style/rest.md
+│       │   └── ./architect-perspective/general-architecture/api-style/rpc.md
+│       ├── ./architect-perspective/general-architecture/concurrent
+│       │   ├── ./architect-perspective/general-architecture/concurrent/README.md
+│       │   ├── ./architect-perspective/general-architecture/concurrent/hardware-concurrent.md
+│       │   ├── ./architect-perspective/general-architecture/concurrent/process-thread-coroutine.md
+│       │   ├── ./architect-perspective/general-architecture/concurrent/synchronization.md
+│       │   └── ./architect-perspective/general-architecture/concurrent/thread-safe.md
+│       ├── ./architect-perspective/general-architecture/diversion-system
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/README.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/cache-middleware.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/cdn.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/client-cache.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/dns-lookup.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/images
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/load-balancing.md
+│       │   ├── ./architect-perspective/general-architecture/diversion-system/scalability.md
+│       │   └── ./architect-perspective/general-architecture/diversion-system/transmission-optimization.md
+│       ├── ./architect-perspective/general-architecture/scalability
+│       │   └── ./architect-perspective/general-architecture/scalability/README.md
+│       ├── ./architect-perspective/general-architecture/system-security
+│       │   ├── ./architect-perspective/general-architecture/system-security/README.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/authentication.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/authorization.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/confidentiality.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/credentials.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/exploit.md
+│       │   ├── ./architect-perspective/general-architecture/system-security/images
+│       │   ├── ./architect-perspective/general-architecture/system-security/transport-security.md
+│       │   └── ./architect-perspective/general-architecture/system-security/verification.md
+│       └── ./architect-perspective/general-architecture/transaction
+│           ├── ./architect-perspective/general-architecture/transaction/README.md
+│           ├── ./architect-perspective/general-architecture/transaction/distributed.md
+│           ├── ./architect-perspective/general-architecture/transaction/global.md
+│           ├── ./architect-perspective/general-architecture/transaction/images
+│           ├── ./architect-perspective/general-architecture/transaction/local.md
+│           └── ./architect-perspective/general-architecture/transaction/share.md
+├── ./architecture
+│   ├── ./architecture/architect-framework
+│   │   ├── ./architecture/architect-framework/README.md
+│   │   ├── ./architecture/architect-framework/j2ee-base-arch.md
+│   │   ├── ./architecture/architect-framework/kubernetes-base-arch.md
+│   │   ├── ./architecture/architect-framework/serverless-arch-knative.md
+│   │   ├── ./architecture/architect-framework/serverless-arch-kubeless.md
+│   │   ├── ./architecture/architect-framework/servicemesh-lstio-arch.md
+│   │   ├── ./architecture/architect-framework/springboot-base-arch.md
+│   │   └── ./architecture/architect-framework/springcloud-base-arch.md
+│   └── ./architecture/architect-history
+│       ├── ./architecture/architect-history/README.md
+│       ├── ./architecture/architect-history/images
+│       ├── ./architecture/architect-history/microservices.md
+│       ├── ./architecture/architect-history/monolithic.md
+│       ├── ./architecture/architect-history/post-microservices.md
+│       ├── ./architecture/architect-history/primitive-distribution.md
+│       ├── ./architecture/architect-history/serverless.md
+│       └── ./architecture/architect-history/soa.md
+├── ./board.md
+├── ./distribution
+│   ├── ./distribution/connect
+│   │   ├── ./distribution/connect/README.md
+│   │   ├── ./distribution/connect/composer.md
+│   │   ├── ./distribution/connect/configuration.md
+│   │   ├── ./distribution/connect/images
+│   │   ├── ./distribution/connect/load-balancing.md
+│   │   ├── ./distribution/connect/service-discovery.md
+│   │   └── ./distribution/connect/service-routing.md
+│   ├── ./distribution/consensus
+│   │   ├── ./distribution/consensus/README.md
+│   │   ├── ./distribution/consensus/gossip.md
+│   │   ├── ./distribution/consensus/images
+│   │   ├── ./distribution/consensus/paxos.md
+│   │   └── ./distribution/consensus/raft.md
+│   ├── ./distribution/observability
+│   │   ├── ./distribution/observability/README.md
+│   │   ├── ./distribution/observability/images
+│   │   ├── ./distribution/observability/logging.md
+│   │   ├── ./distribution/observability/metrics.md
+│   │   └── ./distribution/observability/tracing.md
+│   ├── ./distribution/secure
+│   │   ├── ./distribution/secure/README.md
+│   │   ├── ./distribution/secure/service-security.md
+│   │   └── ./distribution/secure/zero-trust.md
+│   └── ./distribution/traffic-management
+│       ├── ./distribution/traffic-management/README.md
+│       ├── ./distribution/traffic-management/exception-inject.md
+│       ├── ./distribution/traffic-management/failure.md
+│       ├── ./distribution/traffic-management/images
+│       ├── ./distribution/traffic-management/qos.md
+│       ├── ./distribution/traffic-management/service-downgrade.md
+│       ├── ./distribution/traffic-management/timeout.md
+│       └── ./distribution/traffic-management/traffic-control.md
+├── ./exploration
+│   ├── ./exploration/guide
+│   │   └── ./exploration/guide/quick-start.md
+│   └── ./exploration/projects
+│       ├── ./exploration/projects/README.md
+│       ├── ./exploration/projects/fenix-bookstore-frontend.md
+│       ├── ./exploration/projects/images
+│       ├── ./exploration/projects/microservice_arch_kubernetes.md
+│       ├── ./exploration/projects/microservice_arch_springcloud.md
+│       ├── ./exploration/projects/monolithic_arch_springboot.md
+│       ├── ./exploration/projects/serverless_arch.md
+│       └── ./exploration/projects/servicemesh_arch_istio.md
+├── ./immutable-infrastructure
+│   ├── ./immutable-infrastructure/container
+│   │   ├── ./immutable-infrastructure/container/README.md
+│   │   ├── ./immutable-infrastructure/container/application-centric.md
+│   │   ├── ./immutable-infrastructure/container/container-build-system.md
+│   │   ├── ./immutable-infrastructure/container/history.md
+│   │   └── ./immutable-infrastructure/container/images
+│   ├── ./immutable-infrastructure/mesh
+│   │   ├── ./immutable-infrastructure/mesh/README.md
+│   │   ├── ./immutable-infrastructure/mesh/communication.md
+│   │   ├── ./immutable-infrastructure/mesh/ecosystems.md
+│   │   └── ./immutable-infrastructure/mesh/images
+│   ├── ./immutable-infrastructure/msa-to-cn.md
+│   ├── ./immutable-infrastructure/network
+│   │   ├── ./immutable-infrastructure/network/README.md
+│   │   ├── ./immutable-infrastructure/network/cni.md
+│   │   ├── ./immutable-infrastructure/network/images
+│   │   ├── ./immutable-infrastructure/network/linux-vnet.md
+│   │   ├── ./immutable-infrastructure/network/plugin.md
+│   │   └── ./immutable-infrastructure/network/strategy.md
+│   ├── ./immutable-infrastructure/schedule
+│   │   ├── ./immutable-infrastructure/schedule/README.md
+│   │   ├── ./immutable-infrastructure/schedule/hardware-schedule.md
+│   │   └── ./immutable-infrastructure/schedule/images
+│   └── ./immutable-infrastructure/storage
+│       ├── ./immutable-infrastructure/storage/README.md
+│       ├── ./immutable-infrastructure/storage/csi.md
+│       ├── ./immutable-infrastructure/storage/images
+│       ├── ./immutable-infrastructure/storage/storage-evolution.md
+│       └── ./immutable-infrastructure/storage/storage-plugins.md
+├── ./introduction
+│   ├── ./introduction/_private
+│   │   └── ./introduction/_private/cv.md
+│   ├── ./introduction/about-book.md
+│   ├── ./introduction/about-me.md
+│   ├── ./introduction/about-the-fenix-project.md
+│   └── ./introduction/images
+├── ./methodology
+│   ├── ./methodology/forward-msa
+│   │   ├── ./methodology/forward-msa/README.md
+│   │   ├── ./methodology/forward-msa/governance.md
+│   │   ├── ./methodology/forward-msa/granularity.md
+│   │   ├── ./methodology/forward-msa/images
+│   │   ├── ./methodology/forward-msa/measurement.md
+│   │   ├── ./methodology/forward-msa/objective.md
+│   │   └── ./methodology/forward-msa/prerequest.md
+│   └── ./methodology/pattern
+│       ├── ./methodology/pattern/afk.md
+│       ├── ./methodology/pattern/events
+│       │   ├── ./methodology/pattern/events/README.md
+│       │   ├── ./methodology/pattern/events/cep.md
+│       │   ├── ./methodology/pattern/events/cqrs.md
+│       │   └── ./methodology/pattern/events/es.md
+│       └── ./methodology/pattern/orchestration.md
+├── ./prompt.md
+└── ./tricks
+    ├── ./tricks/2020
+    │   ├── ./tricks/2020/graalvm
+    │   │   ├── ./tricks/2020/graalvm/README.md
+    │   │   ├── ./tricks/2020/graalvm/graal-compiler.md
+    │   │   ├── ./tricks/2020/graalvm/graalvm-native.md
+    │   │   ├── ./tricks/2020/graalvm/images
+    │   │   ├── ./tricks/2020/graalvm/spring-over-graal.md
+    │   │   ├── ./tricks/2020/graalvm/substratevm.md
+    │   │   └── ./tricks/2020/graalvm/video.md
+    │   └── ./tricks/2020/java-crisis
+    │       ├── ./tricks/2020/java-crisis/images
+    │       └── ./tricks/2020/java-crisis/qcon.md
+    └── ./tricks/2021
+        ├── ./tricks/2021/README.md
+        ├── ./tricks/2021/arch
+        │   └── ./tricks/2021/arch/README.md
+        ├── ./tricks/2021/fenix-cli
+        │   ├── ./tricks/2021/fenix-cli/README.md
+        │   └── ./tricks/2021/fenix-cli/assets
+        ├── ./tricks/2021/geekbang.md
+        ├── ./tricks/2021/jdkbuild
+        │   └── ./tricks/2021/jdkbuild/README.md
+        ├── ./tricks/2021/k3s
+        │   ├── ./tricks/2021/k3s/README.md
+        │   ├── ./tricks/2021/k3s/apiserver
+        │   │   ├── ./tricks/2021/k3s/apiserver/README.md
+        │   │   ├── ./tricks/2021/k3s/apiserver/bootstrap.md
+        │   │   └── ./tricks/2021/k3s/apiserver/env.md
+        │   ├── ./tricks/2021/k3s/build.md
+        │   ├── ./tricks/2021/k3s/kubectl
+        │   │   └── ./tricks/2021/k3s/kubectl/README.md
+        │   └── ./tricks/2021/k3s/kubelet
+        │       └── ./tricks/2021/k3s/kubelet/bootstrap.md
+        └── ./tricks/2021/openjdk-for-dummies
+            ├── ./tricks/2021/openjdk-for-dummies/README.md
+            └── ./tricks/2021/openjdk-for-dummies/images
+
+72 directories, 151 files
